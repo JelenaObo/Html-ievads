@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css"> -->
+    <style>
+    /* p{
+        --red-color:#aa1111;
+        background-color: var(--red-color)
+    } */
+    /* input{
+        color: var(--red-color)
+    } */
+   body{
+       --red-color: red;
+       --blue-color: blue;
+       --primary: #1111ee;
+       --secondary: #111111;
+       --error: #ff0000;
+   }
+   .blue-text{
+       color: var(--blue-color);
+       background-color: var(--red-color);
+       border: var(--secondary) solid 1px
+   }
+   .red-text{
+       color: var(--red-color);
+       background-color: var(--blue-color);
+   }
+    
+    </style>
+</head>
+<body>
+    <p id="mainp" class="red-text border heading" style="color: hotpink">test1</p>
+    <p class="red-text blue-text">kaut kas</p>
+    <p class="red-text large-text border">test2</p>
+    <p class="red-text large-text">test4</p>
+    <p class="red-text">
+        <input type="text">
+        <input type="text" disabled>
+        <input type="password">
+    </p>
+    <p class="blue-text">kaut kas 2</p>
+    <p id="footerp" class="blue-text border heading">test3</p>
+    <input type="text">
+
+    <p class="red-text">TEXT1</p>
+    <p class="blue-text">TEXT2</p>
+
+</body>
+</html>

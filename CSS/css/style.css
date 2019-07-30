@@ -1,0 +1,45 @@
+
+        #footerp{
+            color: green;
+        }
+    .red-text{
+        color: blue;
+    }
+    .blue-text{
+        color: red !important;
+    }
+    .red-text{
+        color: yellow;
+    }
+    .border{
+        border: 1px solid black;
+    }
+    .red-text.heading{
+        font-size: 20px;
+    }
+    .red-text.border{
+        border-color: red;
+    }
+    #mainp{ font-family: monospace;
+    }
+    #mainp.red-text{
+        color: green;
+    }
+    [type='password']{
+        background: yellow;
+    }
+    [disabled]{
+        background: grey;
+    }
+    
+.red-text.border{
+    font-size: 60 px;
+}
+.red-text.large-text{
+        font-size: 30 px;
+    }
+
+body{
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

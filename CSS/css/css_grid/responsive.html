@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=div*4, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width: 20%;
+            margin: 5%;
+            height: 50px;
+            background-color: aqua;
+            display: inline-block;
+        }
+
+        @media (min-width:500px){
+            div{
+                margin: 0px;
+            }
+        }
+
+        @media(max-width:400px){
+            div{
+                width:100%;
+            }
+        }
+        @media(min-width:300px) and (max-width:400px){
+            div{
+                background-color: blue;
+            }
+           
+        }
+        @media print{
+            div{
+                background-color: brown;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+
+
+</body>
+</html>

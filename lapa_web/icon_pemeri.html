@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Меню</title>
+  <style>
+   body { margin: 10; }
+   .menu {
+    background: #069b93; /* Цвет фона */
+    margin: 0; /* Убираем отступы */
+    font-family: Arial, sans-serif; /* Шрифт */
+   }
+   li {
+    display: inline-block;
+    list-style: none; /* Убираем маркеры */
+    width: 90px; /* Ширина */
+    text-align: center; /* Выравниваем по центру */
+   }
+   .icon {
+    transition: 2s;
+    text-shadow: 0 0 15px #ff7900, 0 0 15px #ff7900, 0 0 15px #ff7900;
+    font-size: 3em; /* Размер иконок */
+    display: block; /* Блочный элемент */
+   }
+   .menu a {
+    color: #fff; /* Белый цвет */
+    text-decoration: none; /* Убираем подчёркивание у ссылок */
+    padding: 0 0 5px; /* Поле снизу */
+   }
+   .menu a:hover .icon {
+  color: #ffe71a;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+  </style>
+ </head>
+ <body>
+  <ul class="menu">
+   <li><a href="1.html"><span class="icon">♋</span>Гороскоп</a></li>
+   <li><a href="2.html"><span class="icon">☀</span>Погода</a></li>
+   <li><a href="3.html"><span class="icon">♫</span>Музыка</a></li>
+   <li><a href="4.html"><span class="icon">☥</span>Религия</a></li>
+  </ul>
+ </body>
+</html>
