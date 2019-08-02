@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid</title>
+    <!-- <style>
+        body{
+            height: 500px;
+            /* background-image: linear-gradient(to right bottom, red, green, blue); */
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d8e0de+0,aebfbc+22,99afab+33,8ea6a2+50,829d98+67,4e5c5a+82,0e0e0e+100;Grey+3D */
+background: #d8e0de; /* Old browsers */
+background: -moz-linear-gradient(top,  #d8e0de 0%, #aebfbc 22%, #99afab 33%, #8ea6a2 50%, #829d98 67%, #4e5c5a 82%, #0e0e0e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #d8e0de 0%,#aebfbc 22%,#99afab 33%,#8ea6a2 50%,#829d98 67%,#4e5c5a 82%,#0e0e0e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #d8e0de 0%,#aebfbc 22%,#99afab 33%,#8ea6a2 50%,#829d98 67%,#4e5c5a 82%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8e0de', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+        }
+    </style> -->
+    <style>
+        .conteiner{
+            font-size: 40px;
+            width: 100%;
+            display:grid;
+            /* grid-template-columns: 200px 200px 200px; */
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            /* grid-column-gap: 10px;
+            grid-row-gap:20px; */
+            grid-gap: 20px 10px;
+            /* justify-items: center;
+            align-content: end; */
+            /* grid-template-areas: 
+            "header header header"
+            "sidebar content menu"
+            "sidebar . menu"; */
+        }
+        .d1{
+            background-color: red;
+            /* grid-area: menu; */
+        }
+        .d2{
+            /* grid-area: header; */
+            background-color: blue;
+            /* justify-self: center; */
+            /* justify-self: start; */
+            /* justify-self: end; */
+            /* justify-self: stretch; */
+
+            /* align-self: center; */
+        }
+        .d3{
+            background-color: rgb(104,42,42);
+        }
+        .d4{
+            background-color: rgb(14,23,100);
+            /* grid-area: 1/1/3/3; */
+            
+        }
+        .d5{
+            background-color: rgb(17,98,7);
+            /* grid-column: 2/4;
+            grid-row: 1/3; */
+            /* align-self: center; */
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+        <div class="d5">5</div>
+    </div>
+</body>
+</html>

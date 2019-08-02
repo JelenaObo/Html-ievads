@@ -4,7 +4,7 @@ body{
 
 header{
     background-color: aquamarine;
-    margin: 0 0 30px;
+    /* margin: 0 0 30px; */
     /* padding: 30px 0; */
     padding: 30px 0 20px;
 }
@@ -157,5 +157,61 @@ div{}
     /* order: 2; */
     align-self: center;
     width: auto;
+
+}
+.Menu{
+    width: 100%;
+    margin: 0 auto;
+    background-color: brown;
+    /* padding: 10px; */
+}
+
+ul.menu{
+    margin: 0; 
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+ul.menu li{
+    display: inline;
+}
+.Image{
+    /* width: 100%; */
+    background-image: url("butterfly.jfif") ;
+    height: 300px;
+}
+.conteiner2{
+    margin: 10px;
+    font-size: 25px;
+    /* width: 100%; */
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px 10px;
+
+}
+.d1{
+    background-color: grey;
+        text-align: center;
+        grid-area: 1/1/2/3;
+}
+.d2{
+    background-color: grey;
+    text-align: center;
+    grid-area: 1/3/3/4;
+}
+.d3{
+    background-color: grey;
+    text-align: center;
+}
+.d4{
+    background-color: grey;
+    text-align: center;
+}
+.d5{
+    background-color: grey;
+    text-align: center;
+    grid-area: 3/1/4/4;
+}
+.map{
 
 }
