@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script>
     // $().ready(function(){
     //     var count = 0;
@@ -17,19 +19,47 @@
     //         }
     //     )
     // })
-
     $().ready(function(){
-        var count = 0;
+        if (localStorage.getItem("count")){
+            var count = localStorage.getItem("count")
+        } else{
+            var count = 0;
+        }
+        // var count = 0;
+
+        $("#output").html(localStorage.getItem("list"))
+
         $("button").click(
             function(){
-                // $("input").val()
                 count++;
                 $("#output").append("<p>" + count + ". "+ $("input").val() +"</p>")
+                localStorage.setItem("list", $("#output").html()) //saglaba visu atmina
+
                 $("input").val("")
             }
         )
-    })
+        $("p").click(
+            function(){
+                var p = $(this)
+                console.log($(this))
+                p.css("text-decoration", "line-through")
+            }
+        )
+         $("body").on('click', "p", function(){
+             var p = $(this)
 
+            //  p.css("text-decoration", "line-through")
+               p.hide(5000, "linear");
+               localStorage.setItem("list", $("#output").html())
+        })
+        // $("#output").draggable();
+        $("#output").sortable({
+            update: function (){
+                localStorage.setItem("list", $("#output").html())
+            }
+        });
+
+    })
 </script>
 </head>
 
@@ -37,6 +67,7 @@
     <input type="text">
     <button>Add new row</button>
     <div id="output"></div>
+    <p>text</p>
 </body>
 
 </html>
